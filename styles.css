@@ -1,0 +1,376 @@
+*{
+  padding: 0;
+  Margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-margin: 100px;
+}
+body {
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+.nav-container {
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  background-image: linear-gradient(0deg, red, white 18%, darkgreen);
+  height: 100px;
+  width: 100%; 
+  border-bottom: 3px black solid;
+}
+
+img {
+  position: absolute;
+  border-radius: 50%;
+  left: 27px;
+  top: 9px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 27px;
+  line-height: 100px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 100px;
+  margin: 0 5px;
+} 
+
+nav ul li a {
+  color:black;
+  font-size: 21px;
+  font-weight: bold;
+  Text-transform: uppercase;
+  transition: 0.5;
+  padding: 13px;
+  border-radius: 9px;
+}
+
+a:hover {
+  color: white;
+  Background-color:black;
+  transition: 0.5ms;
+}
+
+a.active {
+  color: blue;
+}
+
+.checkbtn {
+  Color: white;
+  font-size:27px;
+  float: right;
+  line-height: 100px;
+  margin-right: 40px;
+  cursor:pointer;
+  display: none;
+}
+
+#check {
+  display:none;
+}
+.Lorem {
+  font-size: 39px;
+  display: inline-block;
+  text-align: center;
+  line-height: 100px;
+  display: none;
+
+}
+.foot{
+    background-image: linear-gradient(180deg, red, white 18%, darkgreen);
+    height: 100px;
+    width: 100%; 
+    border-bottom: 3px black solid;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 100px;
+  }
+
+
+@media (max-width:858px){
+  .checkbtn {
+    display: block;
+  } 
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:rgb(9, 25, 31, 0.72);
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    Transition: all .5ms;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height:30px; 
+  }
+
+  nav ul li a {
+    color: white;
+    Background: none;
+    
+    font-size: 18px;
+    Text-transform: uppercase; 
+  }
+
+  a:hover {
+    color: white;
+    Background: black;
+    box-shadow: none;
+  }
+
+  a:active {
+    color: red;
+    Background: none;
+    box-shadow: none;
+   
+  }
+  #check:checked ~ ul { 
+    left: 0;
+  }
+  .Lorem {
+    font-size:27;
+    display: inline-block;
+    display: flex;
+    justify-content:Right;
+    Padding-right:33px;
+    Padding-left:112px;
+    line-height: 100px;
+    
+  
+  }
+  .img-Appitizers, .img-Main, .img-Dessert, .img-Drinks{
+    min-height: 200px;
+    height:3vh;
+  }
+  .img-Appitizers>h1, .img-Main>h1, .img-Dessert>h1, .img-Drinks>h1{
+    font-size: 18px;
+
+  }
+  .text1 {
+    height: 100px;
+    background-color: white;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    
+    padding-top: 100px;
+}
+  .text1>h2, .text1>p{
+    padding-top: 18px;
+    font-size: 21px;
+
+  }
+  div>.Item>h5,  div>.Item>p{
+    Margin-left: 9px;
+    padding-left: 9px;
+  }
+    .foot>p {
+    font-size: 18px;
+    display: flex;
+    text-align: auto;
+    justify-content: auto;
+
+  }
+}
+@media (max-width:550px){
+  .Lorem {
+    font-size:18px;
+    display: inline-block;
+    display: flex;
+    justify-content:Right;
+    Padding-right:18px;
+    Padding-left:112px;
+    line-height: 100px;
+  }
+
+    .checkbtn {
+      display: block;
+      margin-right: 12px;
+    } 
+    .text1 {
+      height: 100px;
+      background-color: white;
+      font-size: 18px;
+      text-align: center;
+      font-family: 'Raleway', Arial, sans-serif;
+    }
+      .foot>p {
+      font-size: 9px;
+      display: flex;
+      text-align: auto;
+      justify-content: auto;
+      
+    }
+  
+  }
+
+
+
+
+.text1 {
+  height: 300px;
+  background-color: white;
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Raleway', Arial, sans-serif;
+  padding-top: 100px;
+}
+.text, .foot {
+  height: 100px;
+  background-color: white;
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Raleway', Arial, sans-serif;
+}
+.container {
+  width:100%;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 40% 27% 27% 6%;
+  grid-template-rows: 4;
+  /*Border: 3px black solid;*/
+  margin:0;
+  Padding:0;
+}
+
+/*
+.Item, .Item-1, .Item-1a, .Item-C {
+  border: 3px black solid;
+  Margin:0;
+  Padding: 0; 
+}*/
+
+.Item-1{
+  grid-row: 1 / 5;
+  /*border: 3px black solid;*/
+  display: grid; 
+}
+
+.Item-1a {
+  /*border: 3px black solid;*/
+  grid-template-rows: 1fr;
+}
+
+h4 {
+  text-align: center;
+}
+
+.Item-C {
+  grid-row: 1 / 5;
+  grid-column: 4 / 5;
+  /*border: 3px black solid;*/
+}
+.img-Appitizers{
+  width:100%;
+  height:10vh;
+  background-image: url(Img/food-1.jpeg);
+  background-size: cover;
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.img-Appitizers>h1 {
+  font-size: 33px;
+  font-weight: bold;
+  Color:white;
+  padding: 0px 9px 0px 9px;
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 9px;
+}
+
+
+.img-Main{
+  width:100%;
+  height:10vh;
+  background-image: url(Img/food-2.jpg);
+  background-size: cover;
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+.img-Main>h1 {
+  font-size: 33px;
+  font-weight: bold;
+  Color:white;
+  padding: 0px 9px 0px 9px;
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 9px;
+}
+
+.img-Dessert{
+  width:100%;
+  height:10vh;
+  background-image: url(Img/food-3.jpg);
+  background-size: cover;
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.img-Dessert>h1 {
+  font-size: 33px;
+  font-weight: bold;
+  Color:white;
+  padding: 0px 9px 0px 9px;
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 9px;
+}
+
+.img-Drinks{
+  width:100%;
+  height:10vh;
+  background-image: url(Img/food-4.jpeg);
+  background-size: cover;
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  
+}
+.img-Drinks>h1 {
+  font-size: 33px;
+  font-weight: bold;
+  Color:white;
+  padding: 0px 9px 0px 9px;
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 9px;
+}
+
+.Item-1a{
+  border-right: 7px rgba(255, 0, 0, 0.12) Solid;
+  
+}
+
